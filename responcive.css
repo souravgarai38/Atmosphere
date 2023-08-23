@@ -1,0 +1,64 @@
+@media (max-width: 725px){
+    html{
+        font-size: 14px;
+    }
+    main{
+        height: fit-content;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar> *{
+        width: 100%;
+    }
+    .brand{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .nav-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-content input{
+        width: 100%;
+        margin: 0 0 10px 0;
+        border-radius: 20px;
+    }
+    .nav-content button{
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+
+    .location{
+        margin-top: 20px;
+    }
+
+    .weather{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .card{
+        max-width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .foot{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 600px){
+    html{
+        font-size: 12px;
+    }
+    .city-container{
+        flex-direction: column-reverse;
+    }
+    .weather-condition{
+        margin-bottom: 30px;
+    }
+    .details-container :nth-child(n+2){
+        margin-top: 10px;
+    }
+}

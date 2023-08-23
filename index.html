@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere</title>
+
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1163/1163759.png" type="image/x-icon">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Css for responcive -->
+    <link rel="stylesheet" href="responcive.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar component">
+            <h1 class="brand"><a href="#">Atmosphere</a></h1>
+
+            <div class="nav-content">
+                <input id="search" type="text" placeholder="Search by city name" aria-label="Search">
+                <button type="button" id="s_btn" class="btn">Search</button>
+            </div>
+        </nav>
+
+        <div class="location component">
+            <div class="city"><h1 id="city_country_name">Kolkata, India</h1></div>
+            <div class="city-container">
+                <div class="details-container">
+                    <p class="details">
+                        Local Date-Time : <span id="localtime">22-08-2023 02:10</span>
+                    </p>
+                    <p class="details">
+                        Day/Night : <span><span id="day_night">Day</span></span>
+                    </p>
+                    <p class="details">
+                        Last Updated on : <span id="lastupdated">22-08-2023 02:00</span>
+                    </p>
+                </div>
+                <div class="weather-condition">
+                    <img height="100px" width="100px" src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="Loading..." id="condition_icon">
+                    <p class="details">
+                        <span><span id="weather_condition">Cloudy</span></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather component">
+            <div class="card-1 card">
+                <h1 class="temp-h weather-h">Temperature</h1>
+                <img class="temp-icon weather-icon" height="70px" width="70px" src="https://cdn-icons-png.flaticon.com/128/3815/3815449.png" alt="Loading...">
+                <h1 class="temp-p weather-p"><span id="temp_value">31</span><sup>o</sup>C</h1>
+            </div>
+            <div class="card-2 card">
+                <h1 class="humedity-h weather-h">Humidity</h1>
+                <img class="humedity-icon weather-icon" height="70px" width="70px" src="https://cdn-icons-png.flaticon.com/128/6142/6142706.png" alt="Loading...">
+                <h1 class="humedity-p weather-p"><span id="humedity_value">55</span>%</h1>
+            </div>
+            <div class="card-3 card">
+                <h1 class="wind-h weather-h">Wind Speed</h1>
+                <img class="wind-icon weather-icon" height="70px" width="70px" src="https://cdn-icons-png.flaticon.com/128/5532/5532989.png" alt="Loading...">
+                <h1 class="wind-p weather-p"><span id="wind_value">22</span> km/h</h1>
+            </div>
+        </div>
+
+        <footer class="foot component">
+            <center><span>&copy; 2023 Sourav Garai. All rights reserved.</span></center>
+        </footer>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

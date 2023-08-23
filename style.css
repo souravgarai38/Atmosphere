@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * {
+    pointer-events: none;
+} */
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #202124;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.component{
+    width: 95vw;
+}
+
+.navbar{
+    background-color: #3c4043;
+    padding: 13px 55px;
+    border-radius: 3.4rem;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 8px blue;
+    display: flex;
+    justify-content: space-between;
+}
+.brand a{
+    text-decoration: none;
+    color: white;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+}
+.nav-content input{
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    margin-right: 9px;
+}
+.nav-content button{
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+.nav-content button:hover{
+    background-color: rgb(2, 102, 2);
+}
+
+
+.location{
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    background-color: rgb(59, 7, 136);
+    box-shadow: 0 0 6px yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.city{
+    margin-bottom: 30px;
+    color: yellowgreen;
+}
+.city-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.details-container :nth-child(n+2){
+    margin-top: 25px;
+}
+.city-container>*{
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.details> span{
+    color: rgb(251, 212, 113);
+}
+.weather-condition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.weather{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    min-width: 210px;
+    max-width: 350px;
+    min-height: 250px;
+    padding: 20px;
+    margin: 20px 10px 0;
+    flex: 1 1;
+    border-radius: 3px;
+    border: 2px solid purple;
+    background: linear-gradient(135deg, #3c4043, #1c1c1c);
+    box-shadow: 0 0 8px purple;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.weather-h{
+    color: rgb(251, 95, 11);
+}
+.weather-p{
+    color: rgb(250, 228, 116);
+}
+
+
+.foot{
+    background-color: blue;
+    color: white;
+    padding: 8px 55px;
+    border-radius: 3.4rem;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 8px blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
