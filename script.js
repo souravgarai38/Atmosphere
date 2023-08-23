@@ -15,10 +15,10 @@ s_btn.addEventListener("click", function() {
     getDetails(city);
 });
 
-document.addEventListener("contextmenu", function(event) {
-    event.preventDefault(); // Prevent the default context menu
-    //You can also optionally add other custom logic here
-});
+// document.addEventListener("contextmenu", function(event) {
+//     event.preventDefault(); // Prevent the default context menu
+//     You can also optionally add other custom logic here
+// });
 function getDetails(city) {
     // API URL
     let apiUrl = `https://api.weatherapi.com/v1/current.json?key=0351ecb7cf2a420abb9163700232008&q=${city}&aqi=no`;
